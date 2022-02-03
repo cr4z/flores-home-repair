@@ -1,0 +1,66 @@
+.header {
+    pointer-events: none;
+
+    position: relative;
+    width: 100%;
+    height: 20rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header:after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 149, 255, 0.58);
+
+    mix-blend-mode: multiply
+}
+
+.header img {
+    object-fit: cover;
+}
+
+.textBox {
+    margin: 0;
+    z-index: 100;
+    position: absolute;
+    text-align: center;
+    font-family: "Patua One";
+    color: white;
+    text-shadow: 3px 4px 7px rgba(77, 77, 77, 0.74);
+}
+
+.textBox h1 {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.textBox h2 {
+    font-weight: 100;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+.header {
+    height: 25rem;
+}
+
+    .textBox h1 {
+        font-weight: 400;
+        font-size: 4rem;
+    }
+
+    .textBox h2 {
+        font-weight: 100;
+        font-size: 1.9rem;
+    }
+}

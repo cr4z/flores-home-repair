@@ -1,0 +1,87 @@
+.nav {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    bottom: 0px;
+    background-color: white;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+    .nav {
+        position: static;
+        display: flex;
+        box-shadow: 0px -3px -10px rgba(0, 0, 0, 0.1);
+        justify-content: space-between;
+    }
+
+    .nav .logo {
+        display: block;
+    }
+}
+
+.logo {
+    display: none;
+    width: 190px;
+    position: relative;
+    left: 10px;
+}
+
+.logo img {
+    object-fit: contain;
+}
+
+.rhombusContainer {
+    display: flex;
+    height: 4em;
+    margin: 0;
+    margin-right: 2rem;
+    list-style: none;
+}
+
+.rhombus {
+    font-family: "Saira Semi Condensed", sans-serif;
+    width: 92px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.link {
+    color: black;
+    text-transform: uppercase;
+}
+
+.contactLink {
+    color: rgb(0, 102, 255);
+    text-transform: uppercase;
+}
+
+.selected .rhombus {
+    background: linear-gradient(45deg, #79c5e7, #519ec2);
+    transform: skew(-20deg);
+}
+
+.selected .link,
+.selected .contactLink {
+    color: #fff;
+    transform: skew(20deg);
+}
+
+.callUs {
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.callUs span {
+    border-bottom: 1px dotted #35a1d3;
+}
