@@ -33,7 +33,7 @@ export default function Gallery() {
   }
 
   return (
-    <Layout>
+    <Layout title="Gallery">
       <header className={stylesHeader.header + " noselect"}>
         <div className={stylesHeader.textBox}>
           <h1>Flores Home Repair</h1>

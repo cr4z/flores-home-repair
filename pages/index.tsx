@@ -13,16 +13,7 @@ import Layout from "../src/components/layout";
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Home - Flores Home Repair</title>
-        <meta
-          name="description"
-          content="Flores Home Repair is a Hill Country owned business with a history of working with
-          customers to create projects that are built to the highest specifications."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Layout>
+      <Layout title="Home">
         <header className={stylesHeader.header + " noselect"}>
           <div className={stylesHeader.textBox}>
             <h1>Flores Home Repair</h1>

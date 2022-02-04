@@ -33,7 +33,7 @@ export default function Gallery() {
   }, [router.asPath]);
 
   return (
-    <Layout>
+    <Layout title="About">
       <header className={stylesHeader.header + " noselect"}>
         <div className={stylesHeader.textBox}>
           <h1>Flores Home Repair</h1>
