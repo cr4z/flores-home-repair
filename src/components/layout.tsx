@@ -3,6 +3,7 @@ import styles from "../../styles/Layout.module.css";
 
 import Navbar from "./navbar";
 import Head from "next/head";
+import { numbers } from "../numbers";
 
 type Props = {
   children: any;
@@ -34,14 +35,23 @@ export default function Layout({ children, title }: Props) {
           <div>
             <h4>Website made by Steven Cruz</h4>
             <span>
-              View more of my work at <a href="https://stevencruz.dev">stevencruz.dev</a>
+              Need a professional, fast, and SEO-optimized website? Let&apos;s get in touch:{" "}
             </span>
+            <a href="https://www.linkedin.com/in/sc-bennett/">
+              https://www.linkedin.com/in/sc-bennett/
+            </a>
           </div>
           <div>
             <h4>Contact Flores Home Repair</h4>
-            <a href="mailto:fhomerepair@gmail.com">fhomerepair@gmail.com</a>
-            <span>Number 1: 830-201-2788</span>
-            <span>Number 2: 817-449-0763</span>
+            <span>
+              Email: <a href="mailto:fhomerepair@gmail.com">fhomerepair@gmail.com</a>
+            </span>
+            <span>
+              Phone 1: <a href={`tel:${numbers.telOne}`}>{numbers.one}</a>
+            </span>
+            <span>
+              Phone 2: <a href={`tel:${numbers.telTwo}`}>{numbers.two}</a>
+            </span>
           </div>
           <div>
             <h4>Asset attributions:</h4>
