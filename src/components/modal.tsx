@@ -39,7 +39,7 @@ export default function PictureModal({ showModal, modalImg, setShowModal }: Prop
           Close
         </a>
         <a className="button" target="_blank" rel="noopener noreferrer" href={modalImg?.src}>
-          See full image
+          See full image &gt;
         </a>
       </div>
     </Modal>

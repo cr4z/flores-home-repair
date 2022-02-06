@@ -44,15 +44,7 @@ export default function Showcase(): ReactElement {
           >
             {GetSwiperSlides(setShowModal, setModalImg)}
           </Swiper>
-          <div
-            style={{
-              padding: "1rem 0 0 2rem",
-              width: "fit-content",
-              marginLeft: "auto",
-              display: "flex",
-              marginBottom: "2rem",
-            }}
-          >
+          <div className={styles.btn}>
             <Link href="/gallery">
               <a className="button">See our full gallery {">"}</a>
             </Link>

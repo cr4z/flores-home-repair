@@ -16,3 +16,22 @@
 .showcaseItem:hover img {
     transform: scale(1.1);
 }
+
+.btn {
+    padding-top: 1rem;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+    .btn {
+        width: fit-content;
+        margin-right: 0;
+        margin-left: auto;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+}

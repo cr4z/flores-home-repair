@@ -30,8 +30,8 @@
 
 .left {
     width: 10rem;
-    background: var(--greenish);
-    background: linear-gradient(var(--greenish) 0%, #519ec2 100%);
+    background: var(--colorA);
+    background: linear-gradient(var(--colorA) 15%, #519ec2 100%);
     padding: 2rem 0 2rem 0;
 
     display: flex;
@@ -57,6 +57,6 @@
 }
 
 .greenish {
-    background-color: var(--greenish);
-    color: white;
+    background-color: var(--colorA);
+    color: var(--onColorAText);
 }
