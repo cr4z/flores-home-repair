@@ -1,10 +1,11 @@
-import React, { Dispatch, SetStateAction } from "react";
+import Image from "next/image";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 // import react-modal
 import Modal from "react-modal";
 Modal.setAppElement(":root");
 
-import styles from "../../styles/PictureModal.module.css";
+import styles from "../../styles/Modal.module.css";
 
 type Props = {
   showModal: boolean;
@@ -12,6 +13,11 @@ type Props = {
   setShowModal: Dispatch<SetStateAction<boolean>>;
 };
 export default function PictureModal({ showModal, modalImg, setShowModal }: Props) {
+  const [x, setX] = useState<StaticImageData>();
+  useEffect(() => {
+    setX(modalImg);
+  }, [modalImg]);
+
   return (
     <Modal
       isOpen={showModal}
@@ -31,8 +37,8 @@ export default function PictureModal({ showModal, modalImg, setShowModal }: Prop
         },
       }}
     >
-      <div className={styles.modalImg} onClick={() => setShowModal(false)}>
-        <img src={modalImg?.src} alt="example of our work" />
+      <div onClick={() => setShowModal(false)}>
+        {x ? <Image layout="responsive" src={x} alt="example of our work" /> : <>Loading...</>}
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <a className="button" onClick={() => setShowModal(false)}>
