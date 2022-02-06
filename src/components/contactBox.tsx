@@ -11,7 +11,6 @@ interface IProps {
   ctaRef?: LegacyRef<HTMLDivElement>;
 }
 export default function ContactBox({ ctaRef }: IProps) {
-
   return (
     <div className={styles.ctaBx} ref={ctaRef}>
       <div className={styles.cta}>
@@ -40,9 +39,13 @@ export default function ContactBox({ ctaRef }: IProps) {
             </div>
             <div className={styles.lower}>
               <div className={styles.numbers}>
-                <span className={styles.highlight}>{numbers.one}</span>
+                <a className={styles.highlight} href={`tel:${numbers.telOne}`}>
+                  {numbers.one}
+                </a>
                 <span className={styles.orText}>or</span>
-                <span className={styles.highlight}>{numbers.two} </span>
+                <a className={styles.highlight} href={`tel:${numbers.telTwo}`}>
+                  {numbers.two}
+                </a>
               </div>
             </div>
           </div>
