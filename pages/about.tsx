@@ -1,9 +1,7 @@
-import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import ContactBox from "../src/components/contactBox";
 import Layout from "../src/components/layout";
 
-import stylesHeader from "../styles/Header.module.css";
 import styles from "../styles/About.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,6 +12,9 @@ import {
   faTools,
 } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
+import Header from "../src/components/header";
+
+import img from "../public/img/pexels-cleyder-duque-3637789.jpg";
 
 export default function Gallery() {
   const size = "2x";
@@ -27,27 +28,13 @@ export default function Gallery() {
   }
 
   const router = useRouter();
-
   useEffect(() => {
     if (router.asPath == "/about#contact") scrollToCallToAction();
   }, [router.asPath]);
 
   return (
     <Layout title="About">
-      <header className={stylesHeader.header + " noselect"}>
-        <div className={stylesHeader.textBox}>
-          <h1>Flores Home Repair</h1>
-          <h2>A little bit about us and our team</h2>
-        </div>
-        <Image
-          src={"/../public/img/pexels-pixabay-38293.jpg"}
-          priority
-          objectFit="cover"
-          quality={100}
-          layout="fill"
-          alt=""
-        />
-      </header>
+      <Header text="A little bit about us and our team" staticImg={img} />
 
       <div className={styles.greenish}>
         <div className="row">
