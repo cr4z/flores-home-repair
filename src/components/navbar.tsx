@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "/../public/img/logo-bright.png";
+import logo from "/../../public/img/logo-bright.png";
 
 import styles from "../../styles/Navbar.module.css";
 import { useRouter } from "next/router";
