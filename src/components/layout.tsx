@@ -33,27 +33,6 @@ export default function Layout({ children, title }: Props) {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div>
-            <h4>Website made by Steven Cruz</h4>
-            <span>
-              Need a professional, fast, and SEO-optimized website? Let&apos;s get in touch:{" "}
-            </span>
-            <a href="https://www.linkedin.com/in/sc-bennett/">
-              https://www.linkedin.com/in/sc-bennett/
-            </a>
-          </div>
-          <div>
-            <h4>Contact Flores Home Repair</h4>
-            <span>
-              Email: <a href="mailto:fhomerepair@gmail.com">fhomerepair@gmail.com</a>
-            </span>
-            <span>
-              Phone 1: <a href={`tel:${numbers.telOne}`}>{numbers.one}</a>
-            </span>
-            <span>
-              Phone 2: <a href={`tel:${numbers.telTwo}`}>{numbers.two}</a>
-            </span>
-          </div>
-          <div>
             <h4>Asset attributions:</h4>
             <span>
               Photo by <a href="https://www.pexels.com/@rquiros">Rodolfo Quirós</a>{" "}
@@ -70,6 +49,27 @@ export default function Layout({ children, title }: Props) {
                 Flaticon.com
               </a>
             </span>
+          </div>
+          <div>
+            <h4>Contact Flores Home Repair</h4>
+            <span>
+              Email: <a href="mailto:fhomerepair@gmail.com">fhomerepair@gmail.com</a>
+            </span>
+            <span>
+              Phone 1: <a href={`tel:${numbers.telOne}`}>{numbers.one}</a>
+            </span>
+            <span>
+              Phone 2: <a href={`tel:${numbers.telTwo}`}>{numbers.two}</a>
+            </span>
+          </div>
+          <div>
+            <h4>Website made by Steven Cruz</h4>
+            <span>
+              Need a professional, fast, and SEO-optimized website? Let&apos;s get in touch:{" "}
+            </span>
+            <a href="https://www.linkedin.com/in/sc-bennett/">
+              https://www.linkedin.com/in/sc-bennett/
+            </a>
           </div>
         </div>
       </footer>
