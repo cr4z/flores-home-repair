@@ -68,7 +68,10 @@ export default function Gallery() {
                 <FontAwesomeIcon icon={faPhoneAlt} size={size} />
                 <h3>Contact</h3>
               </span>
-              <p>You tell us what you want with as many details you want</p>
+              <p>
+                Call/email us with your project idea, including as many or as little details
+                necessary.
+              </p>
             </li>
             <li>
               <span>
@@ -77,7 +80,7 @@ export default function Gallery() {
               </span>
               <p>
                 We&apos;ll either give you an estimate over the phone or drive out (at no charge to
-                you) to survey the site
+                you) to survey the work site.
               </p>
             </li>
             <li>
@@ -85,7 +88,9 @@ export default function Gallery() {
                 <FontAwesomeIcon icon={faHandsHelping} size={size} />
                 <h3>Commit</h3>
               </span>
-              <p>Once you&apos;re ready for us to build the project, we&apos;ll get to work</p>
+              <p>
+                Once you&apos;re ready for us to begin building the project, we&apos;ll get to work.
+              </p>
             </li>
             <li>
               <span>
@@ -93,8 +98,8 @@ export default function Gallery() {
                 <h3>Construct</h3>
               </span>
               <p>
-                We&apos;ll work on the project, communicating with you the entire time to make sure
-                it meets all requirements
+                We&apos;ll work on the project while communicating with you the entire time to make
+                sure it meets all requirements
               </p>
             </li>
             <li>
@@ -103,8 +108,8 @@ export default function Gallery() {
                 <h3>Review</h3>
               </span>
               <p>
-                Once the project is deemed complete by us, we&apos;ll work with you to make sure
-                you&apos;re satisfied
+                Take time to assess the quality of your project. If anything&apos;s off, let us know
+                and we&apos;ll fix it.
               </p>
             </li>
           </ul>
