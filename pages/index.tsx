@@ -13,7 +13,7 @@ import img from "../public/img/pexels-rodolfo-quirós-2219024.jpg";
 const Home: NextPage = () => {
   return (
     <Layout title="Home">
-      <Header text="Stone, Fencing, Remodeling, Framing, Pation" staticImg={img} />
+      <Header text="Stone, Fencing, Remodeling, Framing, Patio" staticImg={img} />
       <main className={styles.main}>
         <div className="row">
           <h1>Home Renovation Projects</h1>
