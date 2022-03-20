@@ -18,9 +18,8 @@ const Home: NextPage = () => {
         <div className="row">
           <h1>Home Renovation Projects</h1>
           <p>
-            Flores Home Repair is a Hill Country owned business that has a long history of working
-            with customers to build projects to the highest specifications. We service the Hill
-            Country and adjacent areas.
+            Flores Home Repair is a Marble Falls owned business that has a long history of working
+            with customers to build projects to the highest specifications. We service the entire Hill Country and adjacent areas, just give us a call!
           </p>
         </div>
         <Showcase />
