@@ -15,16 +15,23 @@ const Home: NextPage = () => {
     <Layout title="Home">
       <Header text="Stone, Fencing, Remodeling, Framing, Patio" staticImg={img} />
       <main className={styles.main}>
-        <div className="row">
-          <h1>Home Renovation Projects</h1>
-          <p>
-            Flores Home Repair is a home renovation service based out of Marble Falls that has a long history of working with customers to build
-            projects to the highest specifications. Servicing Austin, Texas Hill Country and surrounding areas. Just give us a call!
-          </p>
-        </div>
-        <Showcase />
-
-        <ContactBox />
+        <section>
+          <div className="row">
+            <h1>Home Renovation Projects</h1>
+            <p>
+              Flores Home Repair is a home renovation service based out of Marble Falls that has a long history of working with customers to build
+              projects to the highest specifications. Servicing Austin, Texas Hill Country and surrounding areas. Just give us a call!
+            </p>
+          </div>
+        </section>
+        
+        <section>
+          <Showcase />
+        </section>
+        
+        <section>
+          <ContactBox />
+        <section>
       </main>
     </Layout>
   );
