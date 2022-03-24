@@ -32,7 +32,7 @@ export default function Layout({ children, title }: Props) {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div>
-            <h4>Asset attributions:</h4>
+            <h3>Asset attributions:</h3>
             <span>
               Photo by <a href="https://www.pexels.com/@rquiros">Rodolfo Quirós</a>{" "}
             </span>
@@ -50,7 +50,7 @@ export default function Layout({ children, title }: Props) {
             </span>
           </div>
           <div>
-            <h4>Contact Flores Home Repair</h4>
+            <h3>Contact Flores Home Repair</h3>
             <span>
               Email: <a href="mailto:fhomerepair@gmail.com">fhomerepair@gmail.com</a>
             </span>
@@ -62,7 +62,7 @@ export default function Layout({ children, title }: Props) {
             </span>
           </div>
           <div>
-            <h4>Website made by Steven Cruz</h4>
+            <h3>Website made by Steven Cruz</h3>
             <span>
               Need a professional, fast, and SEO-optimized website? Let&apos;s get in touch:{" "}
             </span>
