@@ -16,6 +16,7 @@ export default function Gallery() {
   const [modalImg, setModalImg] = useState<any>(null);
 
   for (let [key, value] of Object.entries(allImages)) {
+    const alt = getAltFor(value?.src);
     cells.push(
       <div key={key} className={styles.cell}>
         <Image
@@ -27,7 +28,7 @@ export default function Gallery() {
           objectFit="cover"
           layout="fill"
           src={value?.src}
-          alt="example of our work"
+          alt={alt}
         />
       </div>
     );
@@ -48,4 +49,8 @@ export default function Gallery() {
       </main>
     </Layout>
   );
+}
+
+function getAltFor(path: string): string {
+  return path.substring(path.lastIndexOf("/") + 1).split(".")[0];
 }

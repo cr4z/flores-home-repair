@@ -3,7 +3,6 @@ import styles from "../../styles/Header.module.css";
 
 type Props = { text: string; staticImg: StaticImageData };
 export default function Header({ text, staticImg }: Props) {
-  console.log(staticImg);
   return (
     <header className={styles.header + " noselect"}>
       <div className={styles.textBox}>
