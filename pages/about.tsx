@@ -38,9 +38,9 @@ export default function Gallery() {
 
       <div className={styles.greenish}>
         <div className="row">
-          <h1>
+          <h2>
             We create <em>visions</em>
-          </h1>
+          </h2>
           <p>
             As a team of perfectionists, we work on projects like we work on our own homes. Nobody
             wants to spend money on a poor-quality result. FHR protects your investment by building
@@ -61,7 +61,7 @@ export default function Gallery() {
           <div className={styles.arrow}></div>
         </div>
         <div className={styles.right}>
-          <h1 className={styles.title}>Our process</h1>
+          <h2 className={styles.title}>Our process</h2>
           <ul className={styles.ul}>
             <li>
               <span>

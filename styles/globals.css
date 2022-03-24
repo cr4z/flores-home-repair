@@ -41,6 +41,11 @@ h5 {
   margin: 0;
 }
 
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
 .noselect {
   -webkit-touch-callout: none;
   /* iOS Safari */

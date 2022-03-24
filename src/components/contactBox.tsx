@@ -14,7 +14,7 @@ export default function ContactBox({ ctaRef }: IProps) {
   return (
     <div className={styles.ctaBx} ref={ctaRef}>
       <div className={styles.cta}>
-        <h1>Let&apos;s Get In Touch</h1>
+        <h2>Let&apos;s Get In Touch</h2>
         <p>
           Time and cost is everything. FHR protects your investment by delivering quality results.
           Let&apos;s get started today.
