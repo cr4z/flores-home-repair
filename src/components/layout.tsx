@@ -21,8 +21,13 @@ export default function Layout({ children, title }: Props) {
         <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
+<<<<<<< HEAD
           content="Flores Home Repair is a certified home renovation service based out of Marble Falls that has a long history of working with customers to build
           projects to the highest specifications. Servicing Austin, the Texas Hill Country and surrounding areas. Just give us a call!"
+=======
+          content="Flores Home Repair is a home renovation service based out of Marble Falls that has a long history of working with customers to build
+              projects to the highest specifications. Servicing Austin, the Texas Hill Country and surrounding areas. Just give us a call!"
+>>>>>>> dadb2fa44f7e270a251e57680a674f68c6c32457
         />
         <title>{title + " - Flores Home Repair"}</title>
       </Head>
