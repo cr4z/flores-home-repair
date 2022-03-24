@@ -52,5 +52,8 @@ export default function Gallery() {
 }
 
 function getAltFor(path: string): string {
-  return path.substring(path.lastIndexOf("/") + 1).split(".")[0];
+  return path
+    .substring(path.lastIndexOf("/") + 1)
+    .split(".")[0]
+    .replace(/_/g, " ");
 }
