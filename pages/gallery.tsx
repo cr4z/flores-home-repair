@@ -43,7 +43,9 @@ export default function Gallery() {
         modalImg={modalImg}
       ></PictureModal>
 
-      <div className={styles.grid}>{cells}</div>
+      <main>
+        <div className={styles.grid}>{cells}</div>
+      </main>
     </Layout>
   );
 }
